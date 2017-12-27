@@ -1,0 +1,10 @@
+usar o comando vagrant init para criar um projeto novo
+
+como minha particao documents é nfts, deve seguir o passo abaixo
+https://stackoverflow.com/questions/27677418/vagrant-ssh-permissions
+
+caso nao faça o comando acima, pode conectar conforme abaixo, porem o vagrant nao vai mapear nada
+ssh -i /dados/Documents/vagrant_guide/.vagrant/machines/default/virtualbox/private_key -p 2222 vagrant@localhost
+
+mv .vagrant/machines/default/virtualbox/private_key /home/edmilson/vagrant_key/
+ln -s /home/edmilson/vagrant_key/private_key /dados/Documents/vagrant_guide/.vagrant/machines/default/virtualbox/private_key
